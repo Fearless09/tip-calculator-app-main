@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+    <script src='./javascript/main.js' defer></script>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="images/logo.svg" alt="">
+    </div>
+
+    <div class="container">
+        <div class="box | white-box">
+
+            <div class="bill-Container">
+                <label for="bill">Bill</label>
+                <div class="bill">
+                    <img src="images/icon-dollar.svg" alt="">
+                    <input type="number" id="bill" placeholder="0" required>
+                </div>
+            </div>
+
+            <div class="selectTip">
+                <label for="tip">Select Tip %</label>
+                <div class="tipPercentage | bill">
+                    <button value="5">5%</button>
+                    <button value="10">10%</button>
+                    <button value="15">15%</button>
+                    <button value="25">25%</button>
+                    <button value="50">50%</button>
+                    <input type="number" name="" id="customTip" placeholder="Custom">
+                </div>
+            </div>
+
+            <div class="people">
+                <div class="people-notZero">
+                    <label for="people">Number of People</label>
+                    <span class="notZero" aria-hidden="true">Can't be zero</span>
+                </div>
+
+                <div class="bill">
+                    <img src="images/icon-person.svg" alt="">
+                    <input type="number" id="people" placeholder="0" min="1" required>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box | cyan-box">
+            <div>
+                <div class="tipAmount">
+                    <div>
+                        <h6>Tip Amount</h6>
+                        <p>/ person</p>
+                    </div>
+
+                    <div>
+                        <input type="text" name="" id="tipAmount" placeholder="$0.00" readonly>
+                    </div>
+                </div>
+
+                <div class="total | tipAmount">
+                    <div>
+                        <h6>Total</h6>
+                        <p>/ person</p>
+                    </div>
+
+                    <div>
+                        <input type="text" name="" id="total" placeholder="$0.00" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <input type="reset" id="reset" value="RESET" aria-disabled="true">
+        </div>
+    </div>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor.</a>
+        Coded by <a href="#">Fearless Tech.</a>.
+    </div>
+
+</body>
+
+</html>
